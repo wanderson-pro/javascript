@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 05</title>
+    <style>
+        body{
+            font: normal 20pt Arial;
+            background-color:black;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var salário = Number(window.prompt('Digite seu salário: '));
+        //document.write(salário.toFixed(2).replace(".",","));
+        document.write('Meu salário é ' + salário.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}));
+    </script>
+</body>
+</html>

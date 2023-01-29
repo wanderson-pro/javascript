@@ -1,0 +1,52 @@
+body {
+    background: rgb(81, 214, 255);
+    font: normal 15pt Arial;
+}
+header {
+    text-align: center;
+    color: white;
+}
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
+    text-align: center;
+}
+
+#container {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: relative;
+    padding: 10px 20px;
+    margin: -10px 0 20px;
+    font-size: 2em;
+}
+
+.tempo {
+    background: linear-gradient(215deg,#ECDBC8 5%, #E68F71 10%, #2D6AC2 95%);
+    color: #ffffff;
+    display: inline-block;
+    width: 1.7em;
+    height: 1.4em;
+    margin: -5px;
+    padding: 10px 0px 0px;
+    border-radius: 20px;
+    letter-spacing: 3px;
+    box-shadow: 0 15px 15px #236acc9d;
+}
+
+.pontos {
+    color: #2D6AC2;
+    font-size: 35px;
+    font-weight: bolder;
+    margin: -3px;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    font-style: italic;
+}

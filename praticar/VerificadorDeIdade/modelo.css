@@ -1,0 +1,52 @@
+/*Corpo*/
+body {
+    background: rgb(81, 214, 255);
+    font: normal 15pt Arial;
+}
+/*Cabeçalho*/
+header {
+    text-align: center;
+    color: white;
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.438));
+}
+/*Seção*/
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin:auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.432);
+}
+/*Formulário número*/
+input#txtn {
+    width: 80px;
+    height: 30px;
+    font: 17pt arial;
+    text-align: center;
+    border: 1px solid #44434377;
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px #0000004d;
+}
+/*Botão*/
+input#botão {
+    width: 70px;
+    height: 35px;
+    font: 11pt arial;
+    border: 1px solid #5a59593d;
+    border-radius: 10px;
+    background-color: #8ffd8f;
+}
+
+#botão:hover {
+    background-color: #00ff00;
+    box-shadow: 0px 0px 10px #00ff00;
+    color: white;
+}
+/*Rodapé*/
+footer {
+    text-align: center;
+    color: white;
+    font-style: italic;
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.548));
+}

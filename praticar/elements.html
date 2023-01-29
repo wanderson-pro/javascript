@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando Elementos</title>
+    <style>
+        body{
+            background: black;
+            color: white;
+            font: normal 15pt Arial;
+        }
+        input{
+            font: normal 15pt Arial;
+            width: 100px;
+        }
+        div#res1, div#res2, div#res3, div#res4{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora Simples</h1>
+    <input type="number" name="txttn1" id="txttn1"> 
+    <input type="number" name="txttn2" id="txttn2">
+    <input type="button" value="Calcular" id="txtt3">
+
+    <div id="res1">Soma:</div>
+    <div id="res2">Subtração:</div>
+    <div id="res3">Divisão:</div>
+    <div id="res4">Multiplicação:</div>
+
+    <script>
+        var tn1 = window.document.getElementById('txttn1')
+        var tn2 = window.document.getElementById('txttn2')
+        var clicar = window.document.getElementById('txtt3')
+        clicar.addEventListener('click', somar)
+        clicar.addEventListener('click', subtrair)
+        clicar.addEventListener('click', dividir)
+        clicar.addEventListener('click', multiplicar)
+
+        function somar(){
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var soma = n1 + n2
+            res1.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${soma}</strong>.`
+            res1.style.color = 'red'
+        }
+
+        function subtrair(){
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var subtracao = n1 - n2
+            res2.innerHTML = `A subtação entre ${n1} e ${n2} é igual a <strong>${subtracao}</strong>.`
+            res2.style.color = 'green'
+        }
+
+        function dividir(){
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var divisao = n1 / n2
+            res3.innerHTML = `A divisão entre ${n1} e ${n2} é igual a <strong>${divisao}</strong>.`
+            res3.style.color = 'yellow'
+        }
+        
+        function multiplicar(){
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var multiplicacao = n1 * n2
+            res4.innerHTML = `A multiplicação entre ${n1} e ${n2} é igual a <strong>${multiplicacao}</strong>.`
+            res4.style.color = 'blue'
+        }
+    </script>
+</body>
+</html>

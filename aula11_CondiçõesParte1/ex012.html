@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Condições</title>
+    <style>
+        body{
+            background: black;
+            color: white;
+            font: normal 10pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Brasileiro ou Estrangeiro</h1>
+    Você entá vivendo em: <input type="text" name="txtt1" id="txtt1"> <!--Caixa de texto que vai coletar os dados.-->
+    <input type="button" value="Verificar" onclick="verificar()"> <!--Botão que irá executar a function.-->
+    <div id="res"></div> <!--Texto que mostrará o resultado.-->
+    <script>
+        function verificar() { //Ação que será executada quando o evento botão for clicado.
+            var país = document.querySelector('input#txtt1').value //Pegando os dados da caixa de texto e adicionando na variável "t1".
+            var res = document.getElementById('res') //Pegando o dado que mostrará o resultado e adicionando na variável "res". 
+            if (país == 'Brasil' || país == 'brasil') {
+                res.innerText = 'Brasileiro'
+            } else {
+                res.innerText = 'Estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>
